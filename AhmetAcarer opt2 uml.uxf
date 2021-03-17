@@ -1,4 +1,18 @@
-<diagram program="umletino" version="14.3.0"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>350</x><y>210</y><w>280</w><h>230</h></coordinates><panel_attributes>Vehicle
+<diagram program="umletino" version="14.3.0"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>290</x><y>280</y><w>410</w><h>230</h></coordinates><panel_attributes>Vehicle
+--
+-name: String
+-weight: Integer
+-price: Integer
+-seatingCapacity: Integer
+-kmPerLiter: Integer
+--
+Vehicle(name: String, weight: Integer, price: Integer,
++seatingCapacity: Integer, kmPerLiter: Integer,-vehicles: ArrayList&lt;Vehicle&gt;)
++getName(): String
++getWeight(): Integer
++getPrice(): Integer
++seatingCapacity(): Integer
++getKmPerLiter(): Integer</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>350</x><y>590</y><w>280</w><h>230</h></coordinates><panel_attributes>Motorcycle
 --
 -name: String
 -weight: Integer
@@ -12,7 +26,7 @@ Vehicle(name: String, weight: Integer, price: Integer,
 +getWeight(): Integer
 +getPrice(): Integer
 +seatingCapacity(): Integer
-+getKmPerLiter(): Integer</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>350</x><y>520</y><w>280</w><h>230</h></coordinates><panel_attributes>Motorcycle
++getKmPerLiter(): Integer</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>710</x><y>590</y><w>280</w><h>230</h></coordinates><panel_attributes>Truck
 --
 -name: String
 -weight: Integer
@@ -26,7 +40,7 @@ Vehicle(name: String, weight: Integer, price: Integer,
 +getWeight(): Integer
 +getPrice(): Integer
 +seatingCapacity(): Integer
-+getKmPerLiter(): Integer</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>710</x><y>520</y><w>280</w><h>230</h></coordinates><panel_attributes>Truck
++getKmPerLiter(): Integer</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>480</x><y>500</y><w>30</w><h>110</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;90</additional_attributes></element><element><id>Relation</id><coordinates><x>690</x><y>410</y><w>180</w><h>200</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;160;10;160;180</additional_attributes></element><element><id>Relation</id><coordinates><x>120</x><y>410</y><w>190</w><h>190</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>170;10;10;10;10;170</additional_attributes></element><element><id>UMLClass</id><coordinates><x>0</x><y>580</y><w>280</w><h>230</h></coordinates><panel_attributes>Motorcycle
 --
 -name: String
 -weight: Integer
@@ -40,18 +54,26 @@ Vehicle(name: String, weight: Integer, price: Integer,
 +getWeight(): Integer
 +getPrice(): Integer
 +seatingCapacity(): Integer
-+getKmPerLiter(): Integer</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>480</x><y>430</y><w>30</w><h>110</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;90</additional_attributes></element><element><id>Relation</id><coordinates><x>620</x><y>340</y><w>250</w><h>200</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;230;10;230;180</additional_attributes></element><element><id>Relation</id><coordinates><x>120</x><y>340</y><w>250</w><h>190</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>230;10;10;10;10;170</additional_attributes></element><element><id>UMLClass</id><coordinates><x>0</x><y>510</y><w>280</w><h>230</h></coordinates><panel_attributes>Motorcycle
++getKmPerLiter(): Integer</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>50</x><y>10</y><w>280</w><h>230</h></coordinates><panel_attributes>Menu
 --
--name: String
--weight: Integer
--price: Integer
--seatingCapacity: Integer
--kmPerLiter: Integer
+
 --
-Vehicle(name: String, weight: Integer, price: Integer,
-+seatingCapacity: Integer, kmPerLiter: Integer)
-+getName(): String
-+getWeight(): Integer
-+getPrice(): Integer
-+seatingCapacity(): Integer
-+getKmPerLiter(): Integer</panel_attributes><additional_attributes></additional_attributes></element></diagram>
+-Menu()
+-printVehicles(): void
+-compareVehicles(): void</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>670</x><y>20</y><w>280</w><h>230</h></coordinates><panel_attributes>Data
+--
+-mostCostEffictiveCar: String
+-mostExpensiveCar: String
+-cheapestCar: String
+-newestCar: String
+-mostExpensiveCar: String
+-isElectric: Boolean
+--
+Data():
+
+addVehicle(): void
+deleteVehicle(): void
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>590</x><y>170</y><w>100</w><h>130</h></coordinates><panel_attributes>lt=&lt;-
+vehicles</panel_attributes><additional_attributes>10;110;10;10;80;10</additional_attributes></element><element><id>Relation</id><coordinates><x>320</x><y>100</y><w>370</w><h>40</h></coordinates><panel_attributes>lt=&lt;-
+data</panel_attributes><additional_attributes>350;20;10;20</additional_attributes></element></diagram>
