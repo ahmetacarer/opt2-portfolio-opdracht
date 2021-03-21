@@ -83,9 +83,9 @@ data</panel_attributes><additional_attributes>350;20;10;20</additional_attribute
 --
 +Engine(type: String)
 +Engine()
-+getEngine(): String
-+setEngine(String): void
-+isEngineSpecified(): Boolean</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>600</x><y>801</y><w>310</w><h>250</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-</panel_attributes><additional_attributes>290;10;290;230;10;230</additional_attributes></element><element><id>Relation</id><coordinates><x>160</x><y>791</y><w>260</w><h>260</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;240;240;240</additional_attributes></element><element><id>UMLClass</id><coordinates><x>740</x><y>400</y><w>210</w><h>70</h></coordinates><panel_attributes>&lt;&lt;Interface&gt;&gt;
++getType(): String
++setType(String): void
++isTypeSpecified(): Boolean</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>600</x><y>801</y><w>310</w><h>250</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-</panel_attributes><additional_attributes>290;10;290;230;10;230</additional_attributes></element><element><id>Relation</id><coordinates><x>160</x><y>791</y><w>260</w><h>260</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;240;240;240</additional_attributes></element><element><id>UMLClass</id><coordinates><x>740</x><y>400</y><w>210</w><h>70</h></coordinates><panel_attributes>&lt;&lt;Interface&gt;&gt;
 VehicleComparison
 --
 id: Long="36548"
