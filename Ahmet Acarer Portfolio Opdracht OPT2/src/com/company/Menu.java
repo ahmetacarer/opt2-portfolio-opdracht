@@ -10,33 +10,19 @@ public class Menu {
         Menu.mainList();
         Scanner scanner = new Scanner(System.in);
         int choice = scanner.nextInt();
-        if (choice == 1)
+
+        if (choice == 1) //add vehicle
         {
-            System.out.println("You choose 1");
-            scanner.nextLine();
-            Menu.addVehicle(scanner);
+            Menu.choice1(scanner);
         }
 
-        else if (choice == 2)
+        else if (choice == 2) //remove vehicle
         {
-            System.out.println("You chose 2");
-            if (data.getVehicles().size() == 0) { System.out.println("You didn't add any vehicles");
-                System.out.println("Add vehicles!");
-            }
-            System.out.println("Enter the name of the vehicle you want to delete");
-            scanner.nextLine();
-            data.deleteVehicle(scanner.nextLine());
-        } else if (choice == 3) {
-            System.out.println("\n\n\nYou chose 3");
-            if (data.getVehicles().size() == 0) {
-                System.out.println("You didn't add any vehicles");
-                System.out.println("Add vehicles!");
-                main(args);
-            }
-            if (data.getVehicles().size() < 2) {
-                System.out.println("You need to add more vehicles");
-            }
-            Menu.compareVehicles(scanner);
+            Menu.choice2(scanner);
+        }
+
+        else if (choice == 3) { //compare vehicle
+            Menu.choice3(scanner);
 
         } else if (choice == 0) {
             System.exit(0);
@@ -97,5 +83,34 @@ public class Menu {
                         "\n3) get cheapest vehicle" +
                         "\n0) go back%n");
     }
+
+    public static void choice1(Scanner scanner){
+        System.out.println("You choose 1");
+        scanner.nextLine();
+        Menu.addVehicle(scanner);
+    }
+    public static void choice2(Scanner scanner){
+        System.out.println("You chose 2");
+        if (data.getVehicles().size() == 0) { System.out.println("You didn't add any vehicles");
+            System.out.println("Add vehicles!");
+        }
+        System.out.println("Enter the name of the vehicle you want to delete");
+        scanner.nextLine();
+        data.deleteVehicle(scanner.nextLine());
+    }
+
+    public static void choice3(Scanner scanner){
+        System.out.println("\n\n\nYou chose 3");
+        if (data.getVehicles().size() == 0) {
+            System.out.println("You didn't add any vehicles");
+            System.out.println("Add vehicles!");
+            return;
+        }
+        if (data.getVehicles().size() < 2) {
+            System.out.println("You need to add more vehicles");
+        }
+        Menu.compareVehicles(scanner);
+    }
+
 
 }
