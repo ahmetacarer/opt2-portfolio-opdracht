@@ -1,0 +1,76 @@
+<diagram program="umletino" version="14.3.0"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>513</x><y>560</y><w>410</w><h>230</h></coordinates><panel_attributes>𝘝𝘦𝘩𝘪𝘤𝘭𝘦
+--
+-name: String
+-weight: Integer
+-price: Integer
+-seatingCapacity: Integer
+-kmPerLiter: Integer
+--
+Vehicle(name: String, weight: Integer, price: Integer,
++seatingCapacity: Integer, kmPerLiter: Integer,-vehicles: ArrayList&lt;Vehicle&gt;)
++getName(): String
++getWeight(): Integer
++getPrice(): Integer
++seatingCapacity(): Integer
++getKmPerLiter(): Integer</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>573</x><y>870</y><w>280</w><h>230</h></coordinates><panel_attributes>Motorcycle
+--
+
+--
+Vehicle(name: String, weight: Integer, price: Integer,
++seatingCapacity: Integer, kmPerLiter: Integer)
++getName(): String
++getWeight(): Integer
++getPrice(): Integer
++seatingCapacity(): Integer
++getKmPerLiter(): Integer</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>933</x><y>880</y><w>280</w><h>230</h></coordinates><panel_attributes>Truck
+--
+
+--
+Vehicle(name: String, weight: Integer, price: Integer,
++seatingCapacity: Integer, kmPerLiter: Integer)
++getName(): String
++getWeight(): Integer
++getPrice(): Integer
++seatingCapacity(): Integer
++getKmPerLiter(): Integer</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>223</x><y>860</y><w>280</w><h>230</h></coordinates><panel_attributes>Motorcycle
+--
+--
+Vehicle(name: String, weight: Integer, price: Integer,
++seatingCapacity: Integer, kmPerLiter: Integer)
++getName(): String
++getWeight(): Integer
++getPrice(): Integer
++seatingCapacity(): Integer
++getKmPerLiter(): Integer</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>913</x><y>0</y><w>280</w><h>230</h></coordinates><panel_attributes>Menu
+--
+
+--
+-Menu()
+-printVehicles(): void
+-compareVehicles(): void</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>893</x><y>300</y><w>280</w><h>230</h></coordinates><panel_attributes>Data
+--
+-mostCostEffictiveCar: String
+-mostExpensiveCar: String
+-cheapestCar: String
+-newestCar: String
+-mostExpensiveCar: String
+-isElectric: Boolean
+--
+Data():
+
+addVehicle(): void
+deleteVehicle(): void
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>813</x><y>450</y><w>100</w><h>130</h></coordinates><panel_attributes>lt=&lt;-
+vehicles
+   *         1
+</panel_attributes><additional_attributes>10;110;10;10;80;10</additional_attributes></element><element><id>Relation</id><coordinates><x>1023</x><y>220</y><w>50</w><h>100</h></coordinates><panel_attributes>lt=&lt;-
+data</panel_attributes><additional_attributes>10;80;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>63</x><y>592</y><w>210</w><h>190</h></coordinates><panel_attributes>Engine
+--
+-type: String
+--
++Engine(type: String)
++Engine()
++getType(): String
++setType(String): void
++isTypeSpecified(): Boolean</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>703</x><y>780</y><w>30</w><h>110</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>10;10;10;90</additional_attributes></element><element><id>Relation</id><coordinates><x>1243</x><y>640</y><w>190</w><h>30</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>10;10;170;10</additional_attributes></element><element><id>Relation</id><coordinates><x>353</x><y>810</y><w>370</w><h>70</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>10;50;10;10;350;10</additional_attributes></element><element><id>Relation</id><coordinates><x>693</x><y>810</y><w>400</w><h>90</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>380;70;380;10;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>263</x><y>681</y><w>270</w><h>30</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-</panel_attributes><additional_attributes>250;10;10;10</additional_attributes></element></diagram>
