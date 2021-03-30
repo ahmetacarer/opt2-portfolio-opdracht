@@ -4,6 +4,9 @@ OPT2 PORTFOLIO OPDRACHT
 Al de variabelen bij Data class moeten wss weg
 Hier en daar nog verbeteringen zetten.
 
+![opt2](https://user-images.githubusercontent.com/73262708/113068998-b700dc00-91bf-11eb-8c2c-c5b91472b6e9.png)
+
+
 ![300321](https://user-images.githubusercontent.com/73262708/112908838-91f16800-90f0-11eb-93e3-50363fa46e1b.png)
 
 
