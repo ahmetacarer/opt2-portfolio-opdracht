@@ -1,0 +1,201 @@
+<diagram program="umletino" version="14.3.0"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>430</x><y>64</y><w>410</w><h>410</h></coordinates><panel_attributes>/Vehicle/
+--
+-name: String
+-weight :int 
+-price: int 
+-seatingCapacity: int 
+-kmPerLiter: int 
+-fuelType: String
+-engine: Engine 
+--
++Vehicle(name: String, weight:  int , price: int ,seatingCapacity: int , 
+kmPerLiter:int, fuelType: String, engine: Engine)
+
++getName(): String
++setName(String name): void
++getWeight(): int
++setWeight(weight: int): void
++getPrice(): int
++setPrice(price: int): void
++getSeatingCapacity(): int
++setSeatingCapacity(seatingCapacity: int)
++getKmPerLiter(): int
++setKmPerLiter(kmPerLiter: int): void
++getFuelType(): String
++setFuelType(fuelType: String): void
++getEngine(): Engine
+/+toString(): String/
+/+printVehicleWithAllAttributes(): void/
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>490</x><y>534</y><w>280</w><h>370</h></coordinates><panel_attributes>Motorcycle
+--
+_-HASSIDECAR: boolean_
+--
++Motorcycle(name: String, weight: int, price: int,
+seatingCapacity: int, kmPerLiter: int,fuelType:String, 
+hasSideCar: boolean,engine: Engine)
++getName(): String
++setName(String name): void
++getWeight(): int
++setWeight(weight: int): void
++getPrice(): int
++setPrice(price: int): void
++getSeatingCapacity(): int
++setSeatingCapacity(seatingCapacity: int)
++getKmPerLiter(): int
++setKmPerLiter(kmPerLiter: int): void
++getFuelType(): String
++setFuelType(fuelType: String): void
++getHasSideCar(): boolean
++toString(): String
++printVehicleWithAllAttributes(): void
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>850</x><y>544</y><w>280</w><h>330</h></coordinates><panel_attributes>Truck
+--
+-hasTrailer: boolean 
+--
++Truck(name: String, weight: int, price: int,
+seatingCapacity: int, kmPerLiter: int,fuelType:String, 
+engine: Engine, hasTrailer: boolean)
++getName(): String
++setName(String name): void
++getWeight(): int
++setWeight(weight: int): void
++getPrice(): int
++setPrice(price: int): void
++getSeatingCapacity(): int
++setSeatingCapacity(seatingCapacity: int)
++getKmPerLiter(): int
++setKmPerLiter(kmPerLiter: int): void
++getFuelType(): String
++setFuelType(fuelType: String): void
++toString(): String
++printVehicleWithAllAttributes(): void
++getHasTrailer(): boolean
++setHasTrailer(hasTrailer: boolean): void</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>110</x><y>534</y><w>320</w><h>360</h></coordinates><panel_attributes>Car
+--
+-amountOfDoors: int
+-luggageCapacity: int
+--
++Car(name: String, weight: int, price: int,
+seatingCapacity: int, kmPerLiter: int,
+fuelType:String, amountOfDoors:int ,luggageCapacity:int, 
+engine: Engine)
++getName(): String
++setName(String name): void
++getWeight(): int
++setWeight(weight: int): void
++getPrice(): int
++setPrice(price: int): void
++getSeatingCapacity(): int
++setSeatingCapacity(seatingCapacity: int)
++getKmPerLiter(): int
++setKmPerLiter(kmPerLiter: int): void
++getFuelType(): String
++setFuelType(fuelType: String): void
++getAmountOfDoors(): int
++getLuggageCapacity(): int
++toString(): String
++printVehicleWithAllAttributes(): void</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>500</x><y>1494</y><w>280</w><h>390</h></coordinates><panel_attributes>Menu
+--
+
+--
++main(String[] args): void
+_-add(scanner: Scanner , addName: String): void_
+_-compareCars(scanner: Scanner): void_
+_-compareTrucks(scanner: Scanner): void_
+_-compareMotorcycles(scanner: Scanner )_
+_-createEngine(scanner: Scanner): Engine _
+_-carOptions(scanner: Scanner ): void_
+_-motorcycleOptions(scanner: Scanner ): void_
+_-truckOptions(scanner: Scanner ): void_
+_-mainList(): void_
+_-generalOptionsList(name: String): void_
+_-compareList(name: String): void_
+_-carChoice1(scanner: Scanner): void_
+_-carChoice2(scanner: Scanner): void_
+_-carChoice3(scanner: Scanner): void_
+_-truckChoice1(scanner: Scanner): void_
+_-truckChoice2(scanner: Scanner): void_
+_-truckChoice3(scanner: Scanner): void_
+_-motorcycleChoice1(scanner: Scanner): void_
+_-motorcycleChoice2(scanner: Scanner): void_
+_-motorcycleChoice3(scanner: Scanner): void_</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>490</x><y>974</y><w>300</w><h>450</h></coordinates><panel_attributes>Data
+--
+_-CARS: ArrayList&lt;Car&gt;_
+_-TRUCKS:ArrayList&lt;Truck&gt;_
+_-MOTORCYCLES: ArrayList&lt;Motorcycle&gt;_
+--
++Data()
++Data(cars: ArrayList&lt;Car&gt; , trucks:ArrayList&lt;Truck&gt;,
+motorcycles: ArrayList&lt;Motorcycle&gt;)
++getCars(): ArrayList&lt;Car&gt; 
++addCar(car: Car): void
++deleteCar(String name): void
++getMostCostEffectiveCar(): Car
++getMostExpensiveCar(): Car
++getCheapestCar(): Car
++getTrucks(): ArrayList&lt;Truck&gt;
++addTruck(truck: Truck): void
++deleteTruck(String name): void
++getMostCostEffectiveTruck(): Truck
++getMostExpensiveTruck(): Truck
++getCheapestTruck(): Truck
++getMotorcycles(): ArrayList&lt;Motorcycle&gt;
++addMotorcycle(motorcycle: Motorcycle): void
++deleteMotorcycle(String name): void
++getMostCostEffectiveMotorcycle(): Motorcycle
++getMostExpensiveMotorcycle(): Motorcycle
++getCheapestMotorcycle(): Motorcycle
++carListWithAllAttributes: void
++motorcycleListWithAllAttributes: void
++truckListWithAllAttributes: void
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>630</x><y>1414</y><w>60</w><h>100</h></coordinates><panel_attributes>lt=&lt;-
+_DATA_</panel_attributes><additional_attributes>10;10;10;80</additional_attributes></element><element><id>Relation</id><coordinates><x>620</x><y>464</y><w>30</w><h>90</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>10;10;10;70</additional_attributes></element><element><id>Relation</id><coordinates><x>270</x><y>514</y><w>370</w><h>40</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>10;20;10;10;350;10</additional_attributes></element><element><id>Relation</id><coordinates><x>610</x><y>514</y><w>400</w><h>50</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>380;30;380;10;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>240</x><y>275</y><w>210</w><h>30</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-</panel_attributes><additional_attributes>190;10;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>0</x><y>166</y><w>250</w><h>230</h></coordinates><panel_attributes>Engine
+--
+-type: String
+-speedInRPM: int
+- hp: int
+--
++Engine(type: String,speedInRPM: int
+,hp: int)
+
++getType(): String
++setType(String): void
++getSpeedInRPM(): int
++setSpeedInRPM(Integer speedInRPM): void
++getHp(): int
++setHp(Integer hp): void
++toString(): String</panel_attributes><additional_attributes></additional_attributes></element><element><id>Text</id><coordinates><x>690</x><y>1424</y><w>20</w><h>70</h></coordinates><panel_attributes>1
+
+
+1
+
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>780</x><y>864</y><w>250</w><h>290</h></coordinates><panel_attributes>lt=&lt;-
+truck</panel_attributes><additional_attributes>210;10;210;270;10;270</additional_attributes></element><element><id>Relation</id><coordinates><x>250</x><y>884</y><w>260</w><h>260</h></coordinates><panel_attributes>lt=&lt;-
+car</panel_attributes><additional_attributes>10;10;10;240;240;240</additional_attributes></element><element><id>Text</id><coordinates><x>710</x><y>904</y><w>30</w><h>70</h></coordinates><panel_attributes>*
+
+
+1
+
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Text</id><coordinates><x>1040</x><y>974</y><w>30</w><h>70</h></coordinates><panel_attributes>*
+
+
+1
+
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Text</id><coordinates><x>300</x><y>984</y><w>30</w><h>70</h></coordinates><panel_attributes>*
+
+
+1
+
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Text</id><coordinates><x>290</x><y>324</y><w>90</w><h>20</h></coordinates><panel_attributes>1                      *
+
+
+
+
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>630</x><y>894</y><w>90</w><h>100</h></coordinates><panel_attributes>lt=&lt;-
+motorcycle</panel_attributes><additional_attributes>10;10;10;80</additional_attributes></element></diagram>
