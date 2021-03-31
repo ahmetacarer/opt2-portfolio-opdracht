@@ -1,7 +1,12 @@
 # opt2-portfolio-opdracht
 OPT2 PORTFOLIO OPDRACHT
 
-Data en Engine klasse goed in uml uitgewerkt, de andere klassen moet ik nog in uml uitwerken
+LAATSTE VERSIE
+
+
+![310321 Ahmet Acarer uml laatste versie](https://user-images.githubusercontent.com/73262708/113144098-2eb92000-922d-11eb-9f21-add0bf80b13e.png)
+
+
 
 
 ![opt2 Laatste versie (moet nog updaten)](https://user-images.githubusercontent.com/73262708/113076682-e28bc280-91cf-11eb-91ed-e5ad16ad95e6.png)
