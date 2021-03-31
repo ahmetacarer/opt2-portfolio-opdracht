@@ -3,4 +3,5 @@ OPT2 PORTFOLIO OPDRACHT
 
 LAATSTE VERSIE
 
-![Ahmet Acarer uml laatste versie OPT2](https://user-images.githubusercontent.com/73262708/113193071-dea78100-925f-11eb-8c89-881048d88584.png)
+![Ahmet Acarer opt2 uml laatste versie](https://user-images.githubusercontent.com/73262708/113203900-e4579380-926c-11eb-8b08-25a8df2a1aef.png)
+
